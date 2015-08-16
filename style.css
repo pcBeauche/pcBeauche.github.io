@@ -1,0 +1,562 @@
+html, body{
+height : 100%;
+font-family: Arial, Helvetica, sans-serif;
+background:#191919;
+color : white;
+margin:0;
+padding:0;
+}
+@viewport {
+   width: device-width;
+   height:device-height;
+   zoom: 1;
+   user-zoom:zoom;
+}
+h1{
+font-style:italic;
+font-family:Georgia, Liberation Sans, Arial, Helvetica, sans-serif;
+color:#A37709;
+font-size:300%;
+text-align:left;
+}
+a{
+text-decoration:none;
+}
+/*
+ HEADER
+*/
+header{
+height : auto;
+min-height : 80px;
+width : 100%;
+top : 0;
+left : 0;
+position :fixed;
+overflow : hidden;
+background-color: black;
+-webkit-box-shadow: 0 2px 20px 0 rgba(0,0,0,.3);
+box-shadow: 0 2px 20px 0 rgba(0,0,0,.3);
+z-index : 20;
+}
+#logo{
+position:absolute;
+display:inline-block;
+min-height :40px;
+min-width : 40px;
+z-index:1;
+}
+#nom{
+display:inline-block;
+margin-left:15%;
+margin-top:0.5%;
+z-index:3;
+}
+#menu{
+position:absolute;
+display:inline-block;
+text-align:center;
+margin-left:45%;
+padding:0;
+top:20%;
+width:49.5%;
+list-style:none;
+z-index:2;
+}
+#menu li{
+display:inline-block;
+position:relative;
+margin-left : 1.75%;
+margin-right : 1.75%;
+font-size:125%;
+color:#A37709;
+}
+#menu a{
+color:#A37709;
+}
+#menu a:hover{
+color:#B0C4DE;
+}
+/*
+ FOOTER
+*/
+footer{
+background:black;
+vertical-align:middle;
+width:100%;
+height:auto;
+margin-top:5%;
+}
+footer p{
+display:inline-block;
+font-size:80%;
+margin-left:20%;
+color:#A37709;
+}
+
+/*CAROUSEL*/
+.carousel {
+margin-top:10%;
+margin-left:auto;
+margin-right:auto;
+width:70%;
+max-height:425px;
+max-width:865px;
+height:70%;
+position: relative;
+margin-bottom:3%;
+}
+.carousel .carousel-photo {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+opacity:0;
+transition: all 0.7s ease-in-out;
+}
+.carousel .carousel-photo .arrow {
+position: absolute;
+top: 0;
+display: block;
+width: 8%;
+height: 100%;
+-webkit-tap-highlight-color: transparent;  
+}
+.carousel .carousel-photo .arrow.arrow-prev {
+left: 0;
+background: url("images/arrowL.png") 50% 50% no-repeat;
+}
+.carousel .carousel-photo .arrow.arrow-next {
+right: 0;
+background: url("images/arrowR.png") 50% 50% no-repeat;
+}
+.carousel [id^="target-photo"] {
+display: none;
+}
+/*photos accueil*/
+.carousel-accueil .photo-1 {
+z-index: 2;
+opacity: 1;
+background: url("images/accueil/bijouterie-horlogerie-beauche-trouville-deauville.jpg") no-repeat center center;
+background-size : cover;
+}
+.carousel-accueil .photo-2 {
+background: url("images/accueil/magasin.jpg") no-repeat center center;
+background-size : cover;
+}
+.carousel-accueil .photo-3 {
+background: url("images/accueil/concours.jpg") no-repeat center center;
+background-size: cover;
+}
+.carousel-accueil .photo-4 {
+background: url("images/accueil/vitrine.jpg") no-repeat center center;
+background-size: cover;
+}
+.carousel-accueil .photo-5 {
+background: url("images/accueil/mecanisme.jpg") no-repeat center center;
+background-size: cover;
+}
+.carousel-accueil .photo-6 {
+background: url("images/accueil/bague.jpg") no-repeat center center;
+background-size: cover;
+}
+/*photos horlogerie*/
+.carousel-horlogerie .photo-1 {
+z-index: 2;
+opacity: 1;
+background: url("images/horlogerie/astron.jpg") no-repeat center center;
+}
+.carousel-horlogerie .photo-2 {
+background: url("images/horlogerie/mauboussin.jpg") no-repeat center center;
+}
+.carousel-horlogerie .photo-3 {
+background: url("images/horlogerie/seiko.jpg") no-repeat center center;
+}
+.carousel-horlogerie .photo-4 {
+background: url("images/horlogerie/pl.jpg") no-repeat center center;
+}
+.carousel-horlogerie .photo-5 {
+background: url("images/horlogerie/kc.jpg") no-repeat center center;
+}
+.carousel-horlogerie .photo-6 {
+background: url("images/horlogerie/certus.jpg") no-repeat center center;
+}
+/*photo bijouterie*/
+.carousel-bijouterie .photo-1 {
+z-index: 2;
+opacity: 1;
+background: url("images/bijouterie/vitrine.jpg") no-repeat center center;
+}
+.carousel-bijouterie .photo-2 {
+background: url("images/bijouterie/alliances.jpg") no-repeat center center;
+}
+.carousel-bijouterie .photo-3 {
+background: url("images/bijouterie/diamant.jpg") no-repeat center center;
+}
+.carousel-bijouterie .photo-4 {
+background: url("images/bijouterie/rubis.jpg") no-repeat center center;
+}
+.carousel-bijouterie .photo-5 {
+background: url("images/bijouterie/saphirRose.jpg") no-repeat center center;
+}
+.carousel-bijouterie .photo-6 {
+background: url("images/bijouterie/boBleue.jpg") no-repeat center center;
+}
+.carousel-bijouterie .photo-7 {
+background: url("images/bijouterie/boDiamant.jpg") no-repeat center center;
+}
+.carousel-bijouterie .photo-8 {
+background: url("images/bijouterie/pendentifRubis.jpg") no-repeat center center;
+}
+.carousel-bijouterie .photo-9 {
+background: url("images/bijouterie/pendentifDiamant.jpg") no-repeat center center;
+}
+.carousel-bijouterie .photo-10 {
+background: url("images/bijouterie/bracelets.jpg") no-repeat center center;
+}
+.carousel-bijouterie .photo-11 {
+background: url("images/bijouterie/colliers.jpg") no-repeat center center;
+}
+.carousel *:target ~ .photo-1 {
+opacity: 0;
+}
+.carousel #target-photo-1:target ~ .photo-1 {
+opacity: 1;
+}
+.carousel #target-photo-2:target ~ .photo-2, .carousel #target-photo-3:target ~ .photo-3, .carousel #target-photo-4:target ~ .photo-4, .carousel #target-photo-5:target ~ .photo-5, .carousel #target-photo-6:target ~ .photo-6
+, .carousel #target-photo-7:target ~ .photo-7, .carousel #target-photo-8:target ~ .photo-8, .carousel #target-photo-9:target ~ .photo-9, .carousel #target-photo-10:target ~ .photo-10, .carousel #target-photo-11:target ~ .photo-11  {
+z-index: 3;
+opacity: 1;
+}
+/*
+ ACCUEIL
+*/
+#presentation{
+text-align:center;
+width:80%;
+margin-left:auto;
+margin-right:auto;
+}
+#presentation div{
+margin:0 4%; 
+display:inline-block;
+vertical-align:middle;
+}
+#portrait{
+width:40%;
+max-height:375px;
+max-width:300px;
+}
+#texte-accueil{
+width:40%;
+text-align:left;
+}
+/*
+ HORLOGERIE
+*/
+.texte-horlogerie{
+text-align:center;
+width:80%;
+margin-left:auto;
+margin-right:auto;
+}
+.texte-horlogerie p{
+text-align:left;
+}
+.texte-horlogerie img{
+width:100%;
+max-height:425px;
+max-width:865px;
+}
+#liste-marque {
+margin-top:3%;
+margin-left:18%;
+text-align:left;
+margin-bottom:3%;
+width:50%;
+}
+#liste-marque li{
+list-style-image: url("images/puce.png");
+margin-bottom:3%;
+color:white;
+}
+#liste-marque a{
+color:white;
+}
+#liste-marque a:hover{
+color:#A37709;
+}
+#liste-marque ul{
+max-height:0;
+overflow:hidden;
+}
+#liste-marque li:hover ul{
+max-height:8em;
+}
+#liste-marque ul li:last-child{
+margin-bottom:0;
+}
+.deb{
+margin-top:3%;
+}
+/*
+ BIJOUTERIE
+*/
+.carousel-bijouterie{
+margin-top:2%;
+}
+#menuBij{
+margin-top:10%;
+position:relative;
+display:inline-block;
+text-align:center;
+padding:0;
+width:100%;
+list-style:none;
+}
+#menuBij li{
+display:inline-block;
+position:relative;
+margin-left : 1%;
+margin-left : 1%;
+color:#A37709;
+}
+#menuBij a{
+color:#A37709;
+}
+#menuBij a:hover{
+color:#B0C4DE;
+}
+.texte-bijouterie{
+text-align:center;
+width:80%;
+margin-left:auto;
+margin-right:auto;
+}
+.texte-bijouterie div{
+margin:0 4%; 
+display:inline-block;
+vertical-align:middle;
+}
+.texteBij{
+width:40%;
+text-align:left;
+}
+.photoBij{
+width:40%;
+max-width:440px;
+max-height:250px;
+}
+ hr { 
+border:0; 
+height:1px; 
+background:#CB7709; 
+background-image:linear-gradient(to right, #CCCC66, #FF7709, #CCCC66);
+margin-top:3%; 
+margin-bottom:3%;
+ }
+/*
+ ATELIER
+*/
+.texte-atelier{
+margin-top:10%;
+width:80%;
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+}
+.texte-atelier p, .texte-atelier ul{
+text-align:left;
+}
+.texte-atelier img{
+width:100%;
+max-height:425px;
+max-width:865px;
+}
+.texte-atelier div{
+margin:0 4%; 
+display:inline-block;
+vertical-align:middle;
+}
+#listeService{
+margin-left:-8%;
+width:40%;
+text-align:left;
+}
+.un{
+color:#A37709;
+font-size:150%;
+margin-top:3%;
+}
+.deux{
+color:white;
+font-size:75%;
+list-style:none;
+margin-top:2%;
+}
+.un li:before{
+content:'- ';
+}
+#photoAtelier{
+margin-left:8%;
+width:40%;
+max-width:365px;
+max-height:460px;
+}
+/*
+ FABRICATION
+*/
+.texte-fabrication{
+margin-top:10%;
+width:80%;
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:5%;
+}
+.texte-fabrication p{
+text-align:left;
+}
+.texte-fabrication img{
+margin-top:5%;
+width:100%;
+max-height:425px;
+max-width:865px;
+}
+/*
+ Contact
+*/
+.texte-contact{
+margin-top:8%;
+width:70%;
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:10%;
+}
+.texte-contact p{
+text-align:left;
+}
+.texte-contact img{
+width:100%;
+max-height:425px;
+max-width:865px;
+margin-bottom:5%;
+}
+.texte-contact a{
+color:white;
+}
+#carte{
+text-align:center;
+}
+@media screen and (max-width: 1100px){
+	.carousel-accueil .photo-3 {
+	background: url("images/mobile/concours1100px.jpg") no-repeat center center;
+	background-size: cover;
+	}
+	.carousel-bijouterie .photo-1 {
+	z-index: 2;
+	opacity: 1;
+	background: url("images/mobile/vitrine1100px.jpg") no-repeat center center;
+	}
+	.carousel-bijouterie .photo-2 {
+	background: url("images/mobile/alliances1100px.jpg") no-repeat center center;
+	}
+	.carousel-bijouterie .photo-3 {
+	background: url("images/mobile/diamant1100px.jpg") no-repeat center center;
+	}
+	.carousel-bijouterie .photo-4 {
+	background: url("images/mobile/rubis1100px.jpg") no-repeat center center;
+	}
+	.carousel-bijouterie .photo-5 {
+	background: url("images/mobile/saphirRose1100px.jpg") no-repeat center center;
+	}
+	.carousel-bijouterie .photo-6 {
+	background: url("images/mobile/boBleue1100px.jpg") no-repeat center center;
+	}
+	.carousel-bijouterie .photo-7 {
+	background: url("images/mobile/boDiamant1100px.jpg") no-repeat center center;
+	}
+	.carousel-bijouterie .photo-8 {
+	background: url("images/mobile/pendentifRubis1100px.jpg") no-repeat center center;
+	}
+	.carousel-bijouterie .photo-9 {
+	background: url("images/mobile/pendentifDiamant1100px.jpg") no-repeat center center;
+	}
+	.carousel-bijouterie .photo-10 {
+	background: url("images/mobile/bracelets1100px.jpg") no-repeat center center;
+	}
+	.carousel-bijouterie .photo-11 {
+	background: url("images/mobile/colliers1100px.jpg") no-repeat center center;
+	}
+	.carousel-accueil{
+	margin-left:auto;
+	margin-right:auto;
+	width:90%;
+	max-width:565px;
+	max-height:277px;
+	}
+	.carousel-bijouterie{
+	margin-left:auto;
+	margin-right:auto;
+	width:90%;
+	max-width:565px;
+	max-height:277px;
+	}
+	#presentation, .texte-accueil, .texte-horlogerie, .texte-bijouterie, .texte-atelier, .texte-fabrication, .texte-contact{
+	width:90%;
+	}
+	 .texte-contact{
+	 margin-top:12%;
+	 }
+}
+@media screen and (max-width: 900px)
+{
+	#nom{
+	margin-left:12%;
+	}
+	#menu{
+	margin-left:48%;
+	}
+	#presentation, .texte-accueil, .texte-horlogerie, .texte-bijouterie, .texte-atelier, .texte-fabrication, .texte-contact{
+	width:90%;
+	}
+	.carousel-accueil, .carousel-horlogerie, #menuBij, .texte-atelier, .texte-fabrication{
+	margin-top:12%;
+	}
+	 .texte-contact{
+	 margin-top:15%;
+	 }
+}
+@media screen and (max-width: 799px)
+{
+	#logo{
+	display:none;
+	}
+	#nom{
+	margin-left:0;
+	width:30%;
+	}
+	#presentation, .texte-accueil, .texte-horlogerie, .texte-bijouterie, .texte-atelier, .texte-fabrication, .texte-contact{
+	width:100%;
+	}
+}
+@media screen and (max-width: 750px)
+{
+	#logo{
+	display:none;
+	}
+	#nom{
+	margin-left:0;
+	width:30%;
+	}
+	#menu{
+	width:65%;
+	margin-left:35%;
+	}
+	#menu li{
+	margin-left:.5%;
+	margin-right:.5%;
+	}
+
+}
