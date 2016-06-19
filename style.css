@@ -206,14 +206,18 @@ footer p{
 }
 
 .carousel-horlogerie .photo-4 {
-	background: url("images/horlogerie/pl.jpg") no-repeat center center;
+	background: url("images/horlogerie/lip.jpg") no-repeat center center;
 }
 
 .carousel-horlogerie .photo-5 {
-	background: url("images/horlogerie/kc.jpg") no-repeat center center;
+	background: url("images/horlogerie/pl.jpg") no-repeat center center;
 }
 
 .carousel-horlogerie .photo-6 {
+	background: url("images/horlogerie/kc.jpg") no-repeat center center;
+}
+
+.carousel-horlogerie .photo-7 {
 	background: url("images/horlogerie/certus.jpg") no-repeat center center;
 }
 
