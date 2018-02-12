@@ -198,26 +198,22 @@ footer p{
 }
 
 .carousel-horlogerie .photo-2 {
-	background: url("images/horlogerie/mauboussin.jpg") no-repeat center center;
-}
-
-.carousel-horlogerie .photo-3 {
 	background: url("images/horlogerie/seiko.jpg") no-repeat center center;
 }
 
-.carousel-horlogerie .photo-4 {
+.carousel-horlogerie .photo-3 {
 	background: url("images/horlogerie/lip.jpg") no-repeat center center;
 }
 
-.carousel-horlogerie .photo-5 {
+.carousel-horlogerie .photo-4 {
 	background: url("images/horlogerie/pl.jpg") no-repeat center center;
 }
 
-.carousel-horlogerie .photo-6 {
+.carousel-horlogerie .photo-5 {
 	background: url("images/horlogerie/kc.jpg") no-repeat center center;
 }
 
-.carousel-horlogerie .photo-7 {
+.carousel-horlogerie .photo-6 {
 	background: url("images/horlogerie/certus.jpg") no-repeat center center;
 }
 
