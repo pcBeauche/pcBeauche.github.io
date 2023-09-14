@@ -230,7 +230,7 @@ footer p{
 .carousel-bijouterie .photo-1 {
 	z-index: 2;
 	opacity: 1;
-	background: url("images/bijouterie/vitrine.jpg") no-repeat center center;
+	background: url("images/bijouterie/bijoux.jpg") no-repeat center center;
 }
 
 .carousel-bijouterie .photo-2 {
@@ -242,34 +242,30 @@ footer p{
 }
 
 .carousel-bijouterie .photo-4 {
-	background: url("images/bijouterie/rubis.jpg") no-repeat center center;
+	background: url("images/bijouterie/saphir.jpg") no-repeat center center;
 }
 
 .carousel-bijouterie .photo-5 {
-	background: url("images/bijouterie/saphirRose.jpg") no-repeat center center;
+	background: url("images/bijouterie/boucle.jpg") no-repeat center center;
 }
 
 .carousel-bijouterie .photo-6 {
-	background: url("images/bijouterie/boBleue.jpg") no-repeat center center;
+	background: url("images/bijouterie/cheva.jpg") no-repeat center center;
 }
 
 .carousel-bijouterie .photo-7 {
-	background: url("images/bijouterie/boDiamant.jpg") no-repeat center center;
-}
-
-.carousel-bijouterie .photo-8 {
 	background: url("images/bijouterie/pendentifRubis.jpg") no-repeat center center;
 }
 
+.carousel-bijouterie .photo-8 {
+	background: url("images/bijouterie/3colliers.jpg") no-repeat center center;
+}
+
 .carousel-bijouterie .photo-9 {
-	background: url("images/bijouterie/pendentifDiamant.jpg") no-repeat center center;
+	background: url("images/bijouterie/duo.jpg") no-repeat center center;
 }
 
 .carousel-bijouterie .photo-10 {
-	background: url("images/bijouterie/bracelets.jpg") no-repeat center center;
-}
-
-.carousel-bijouterie .photo-11 {
 	background: url("images/bijouterie/colliers.jpg") no-repeat center center;
 }
 
